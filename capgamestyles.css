@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,600&display=swap');
+
+* {
+  font-family: Asap, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.account-balance {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.account-balance p {
+  padding-bottom: 20px;
+}
+
+/* Väliviiva */
+.väliviiva {
+  border: solid black 1px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+
+/* --------------------------------------------------- */
+                    /* Kauppa osio */
+
+.shop {
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 180px);
+  justify-content: center;
+}
+
+/* Sitruunat */
+.buy-lemons {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#lemonsKerroin {
+  padding: 5px;
+}
+
+.buy-lemons p {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.buy-lemons button {
+  border-radius: 10px;
+}
+
+.buy-lemons img {
+  padding: 10px;
+  width: 100px;
+}
+
+/* Donitsit */
+.buy-donuts {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#donutsKerroin {
+  padding: 5px;
+}
+
+.buy-donuts p {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.buy-donuts button {
+  border-radius: 10px;
+}
+
+.buy-donuts img {
+  padding: 10px;
+  width: 100px;
+}
+
+/* Katkaravut */
+.buy-shrimps {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#shrimpsKerroin {
+  padding: 5px;
+}
+
+.buy-shrimps p {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.buy-shrimps button {
+  border-radius: 10px;
+}
+
+.buy-shrimps img {
+  padding: 10px;
+  width: 100px;
+}
+
+/* Uutiset */
+.buy-newspapers {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#newspapersKerroin {
+  padding: 5px;
+}
+
+.buy-newspapers p {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.buy-newspapers button {
+  border-radius: 10px;
+}
+
+.buy-newspapers img {
+  padding: 10px;
+  width: 100px;
+}
+
+/* Väliviiva2 */
+.väliviiva2 {
+  border: solid black 1px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+
+/* Kertoimet */
+.shop {
+  padding-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 190px);
+  justify-content: center;
+
+  text-align: center;
+}
+
+.shopTitle {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Lemons */
+.buyLemonsMultiplier {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyLemonsMultiplier:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyLemonsMultiplier p {
+  padding-top: 30px;
+}
+
+/* Donuts */
+.buyDonutsMultiplier {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyDonutsMultiplier:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyDonutsMultiplier p {
+  padding-top: 30px;
+}
+
+/* Shrimps */
+.buyShrimpsMultiplier {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyShrimpsMultiplier:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyShrimpsMultiplier p {
+  padding-top: 30px;
+}
+
+/* Newspapers */
+.buyNewspapersMultiplier {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyNewspapersMultiplier:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyNewspapersMultiplier p {
+  padding-top: 30px;
+}
+
+/* Time reducers in shop ----------------------------- */
+.shop2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  justify-content: center;
+
+  text-align: center;
+}
+
+.buyDonutTimeReducer {
+  padding: 10px;
+  text-align: center;
+
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyDonutTimeReducer:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyDonutTimeReducer h2 {
+  height: 90px;
+}
+
+.buyShrimpTimeReducer {
+  padding: 10px;
+  text-align: center;
+
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyShrimpTimeReducer:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyShrimpTimeReducer h2 {
+  height: 90px;
+}
+
+.buyNewspaperTimeReducer {
+  padding: 10px;
+  text-align: center;
+
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyNewspaperTimeReducer:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyNewspaperTimeReducer h2 {
+  height: 90px;
+}
