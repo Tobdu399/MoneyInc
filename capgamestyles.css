@@ -27,9 +27,9 @@
 /* --------------------------------------------------- */
                     /* Kauppa osio */
 
-.shop {
+.shop1 {
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, 180px);
@@ -132,6 +132,87 @@
   width: 100px;
 }
 
+/* Shop part 2 */
+.shop1-2 {
+  padding-bottom: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 180px);
+  justify-content: center;
+}
+
+/* Films */
+.buy-films {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#filmsKerroin {
+  padding: 5px;
+}
+
+.buy-films p {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.buy-films button {
+  border-radius: 10px;
+}
+
+.buy-films img {
+  padding: 10px;
+  width: 100px;
+}
+
+/* Televisions */
+.buy-tvs {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#tvsKerroin {
+  padding: 5px;
+}
+
+.buy-tvs p {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.buy-tvs button {
+  border-radius: 10px;
+}
+
+.buy-tvs img {
+  padding: 10px;
+  width: 100px;
+}
+
+/* Computers */
+.buy-computers {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#computersKerroin {
+  padding: 5px;
+}
+
+.buy-computers p {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.buy-computers button {
+  border-radius: 10px;
+}
+
+.buy-computers img {
+  padding: 10px;
+  width: 100px;
+}
+
 /* Väliviiva2 */
 .väliviiva2 {
   border: solid black 1px;
@@ -220,8 +301,68 @@
   padding-top: 30px;
 }
 
+/* Multiplier shop part 2 */
+.shop2-2 {
+  padding-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* Films */
+.buyFilmsMultiplier {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyFilmsMultiplier:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyFilmsMultiplier p {
+  padding-top: 30px;
+}
+
+/* Televisions */
+.buyTvsMultiplier {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyTvsMultiplier:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyTvsMultiplier p {
+  padding-top: 30px;
+}
+
+/* Computers */
+.buyComputersMultiplier {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyComputersMultiplier:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyComputersMultiplier p {
+  padding-top: 30px;
+}
+
 /* Time reducers in shop ----------------------------- */
 .shop2 {
+  padding-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 220px);
   justify-content: center;
