@@ -1,4 +1,4 @@
-// Timers
+// Timers (moi)
 var donutsWaitingTime;
 var donutsWaitingTimeOriginal = 3;
 
