@@ -420,3 +420,59 @@
 .buyNewspaperTimeReducer h2 {
   height: 90px;
 }
+
+/* Time reducers part 2 */
+.shop3-2 {
+  padding-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 230px);
+  justify-content: center;
+
+  text-align: center;
+}
+
+.buyFilmTimeReducer {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyFilmTimeReducer:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyFilmTimeReducer p {
+  padding-top: 40px;
+}
+
+.buyTvTimeReducer {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyTvTimeReducer:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyTvTimeReducer p {
+  padding-top: 15px;
+}
+
+.buyComputerTimeReducer {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+
+.buyComputerTimeReducer:hover {
+  background-color: #dedede;
+  border-radius: 20px;
+}
+
+.buyComputerTimeReducer p {
+  padding-top: 15px;
+}
