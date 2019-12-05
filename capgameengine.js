@@ -342,7 +342,7 @@ function buyMultiplierForLemons() {
     lemonsMultiplier = lemonsMultiplier * 2;
     document.getElementById("lemonsKerroin").innerHTML = "Kerroin: " + lemonsMultiplier + "x";
 
-    lemonsMultiplierPrize = lemonsmultiplierPrize * 2;
+    lemonsMultiplierPrize = lemonsMultiplierPrize * 2;
     document.getElementById("lemonPrize").innerHTML = lemonsMultiplierPrize + "€";
 
     // Display the amount you can get now by buying this
@@ -363,7 +363,7 @@ function buyMultiplierForDonuts() {
     donutsMultiplier = donutsMultiplier * 2;
     document.getElementById("donutsKerroin").innerHTML = "Kerroin: " + donutsMultiplier + "x";
 
-    donutsMultiplierPrize = donutsmultiplierPrize * 2;
+    donutsMultiplierPrize = donutsMultiplierPrize * 2;
     document.getElementById("donutPrize").innerHTML = donutsMultiplierPrize + "€";
 
     // Display the amount you can get now by buying this
@@ -383,7 +383,7 @@ function buyMultiplierForShrimps() {
     shrimpsMultiplier = shrimpsMultiplier * 2;
     document.getElementById("shrimpsKerroin").innerHTML = "Kerroin: " + shrimpsMultiplier + "x";
 
-    shrimpsMultiplierPrize = shrimpsmultiplierPrize * 2;
+    shrimpsMultiplierPrize = shrimpsMultiplierPrize * 2;
     document.getElementById("shrimpPrize").innerHTML = shrimpsMultiplierPrize + "€";
 
     // Display the amount you can get now by buying this
@@ -403,7 +403,7 @@ function buyMultiplierForNewspapers() {
     newspapersMultiplier = newspapersMultiplier * 2;
     document.getElementById("newspapersKerroin").innerHTML = "Kerroin: " + newspapersMultiplier + "x";
 
-    newspapersMultiplierPrize = newspapersmultiplierPrize * 2;
+    newspapersMultiplierPrize = newspapersMultiplierPrize * 2;
     document.getElementById("newspaperPrize").innerHTML = newspapersMultiplierPrize + "€";
 
     // Display the amount you can get now by buying this
@@ -625,7 +625,7 @@ function computerTimeReducer() {
 
     if (computerReducerLimit == 10) {
       document.getElementById("computersTimer").innerHTML = "Saatavilla heti";
-      remove5()
+      remove6()
     }
   }
 
