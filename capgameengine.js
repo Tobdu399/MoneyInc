@@ -79,7 +79,7 @@ var computerReducerPrize = 7000;
 var computerReducerLimit = 0;
 
 // --------------------------------------------
-var accountCurrentBalance = 100000000000;
+var accountCurrentBalance = 0;
 
 function buyLemons() {
   document.getElementById("lemonsButton").disabled = true;
