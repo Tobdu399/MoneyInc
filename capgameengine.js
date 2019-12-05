@@ -69,14 +69,17 @@ var shrimpReducerLimit = 0;
 var newspaperReducerPrize = 4000;
 var newspaperReducerLimit = 0;
 
+var filmReducerPrize = 5000;
 var filmReducerLimit = 0;
 
+var tvReducerPrize = 6300;
 var tvReducerLimit = 0;
 
+var computerReducerPrize = 7000;
 var computerReducerLimit = 0;
 
 // --------------------------------------------
-var accountCurrentBalance = 100000000000000000000000;
+var accountCurrentBalance = 100000000000;
 
 function buyLemons() {
   document.getElementById("lemonsButton").disabled = true;
@@ -553,6 +556,84 @@ function newspaperTimeReducer() {
   }
 }
 
+function filmTimeReducer() {
+  if (accountCurrentBalance >= filmReducerPrize) {
+    if (filmReducerLimit < 10) {
+      filmReducerLimit += 1;
+
+      accountCurrentBalance = accountCurrentBalance - filmReducerPrize;
+      document.getElementById("accountBalance").innerHTML = accountCurrentBalance + "€";
+
+      filmReducerPrize = filmReducerPrize * 3;
+      document.getElementById("film-reducer-prize").innerHTML = filmReducerPrize + "€";
+
+      filmsWaitingTimeOriginal -= 1.8;
+      document.getElementById("filmsTimer").innerHTML = filmsWaitingTimeOriginal.toFixed(1) + " Sekunttia";
+    }
+
+    if (filmReducerLimit == 10) {
+      document.getElementById("filmsTimer").innerHTML = "Saatavilla heti";
+      remove4();
+    }
+  }
+
+  else {
+    alert("Sinulla ei ole tarpeeksi rahaa!");
+  }
+}
+
+function tvTimeReducer() {
+  if (accountCurrentBalance >= tvReducerPrize) {
+    if (tvReducerLimit < 10) {
+      tvReducerLimit += 1;
+
+      accountCurrentBalance = accountCurrentBalance - tvReducerPrize;
+      document.getElementById("accountBalance").innerHTML = accountCurrentBalance + "€";
+
+      tvReducerPrize = tvReducerPrize * 3;
+      document.getElementById("tv-reducer-prize").innerHTML = tvReducerPrize + "€";
+
+      tvsWaitingTimeOriginal -= 2.5;
+      document.getElementById("tvsTimer").innerHTML = tvsWaitingTimeOriginal.toFixed(1) + " Sekunttia";
+    }
+
+    if (tvReducerLimit == 10) {
+      document.getElementById("tvsTimer").innerHTML = "Saatavilla heti";
+      remove5();
+    }
+  }
+
+  else {
+    alert("Sinulla ei ole tarpeeksi rahaa!");
+  }
+}
+
+function computerTimeReducer() {
+  if (accountCurrentBalance >= computerReducerPrize) {
+    if (computerReducerLimit < 10) {
+      computerReducerLimit += 1;
+
+      accountCurrentBalance = accountCurrentBalance - computerReducerPrize;
+      document.getElementById("accountBalance").innerHTML = accountCurrentBalance + "€";
+
+      computerReducerPrize = computerReducerPrize * 3;
+      document.getElementById("computer-reducer-prize").innerHTML = computerReducerPrize + "€";
+
+      computersWaitingTimeOriginal -= 3;
+      document.getElementById("computersTimer").innerHTML = computersWaitingTimeOriginal.toFixed(1) + " Sekunttia";
+    }
+
+    if (computerReducerLimit == 10) {
+      document.getElementById("computersTimer").innerHTML = "Saatavilla heti";
+      remove5()
+    }
+  }
+
+  else {
+    alert("Sinulla ei ole tarpeeksi rahaa!");
+  }
+}
+
 function remove1() {
   var elem1 = document.getElementById("donutReducer");
   elem1.parentNode.removeChild(elem1);
@@ -568,5 +649,23 @@ function remove2() {
 function remove3() {
   var elem3 = document.getElementById("newspaperReducer");
   elem3.parentNode.removeChild(elem3);
+  return false;
+}
+
+function remove4() {
+  var elem4 = document.getElementById("filmReducer");
+  elem4.parentNode.removeChild(elem4);
+  return false;
+}
+
+function remove5() {
+  var elem5 = document.getElementById("tvReducer");
+  elem5.parentNode.removeChild(elem5);
+  return false;
+}
+
+function remove6() {
+  var elem6 = document.getElementById("computerReducer");
+  elem6.parentNode.removeChild(elem6);
   return false;
 }
